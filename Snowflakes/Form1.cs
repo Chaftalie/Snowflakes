@@ -27,7 +27,7 @@ namespace Snowflakes
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
 
-            int n = 5000;
+            int n = 10000;
             flock = new Boid[n];
             for (int i = 0; i < n; i++)
             {
@@ -40,9 +40,7 @@ namespace Snowflakes
             foreach(Boid boid in flock)
             {
                 boid.edges();
-
-                //boid.flock(flock);
-                boid.update();
+                boid.Update();
                 boid.show(e);
             }
         }

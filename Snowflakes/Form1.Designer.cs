@@ -39,7 +39,7 @@
             this.pBx_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pBx_main.Location = new System.Drawing.Point(0, 0);
             this.pBx_main.Name = "pBx_main";
-            this.pBx_main.Size = new System.Drawing.Size(1920, 1080);
+            this.pBx_main.Size = new System.Drawing.Size(5760, 1080);
             this.pBx_main.TabIndex = 0;
             this.pBx_main.TabStop = false;
             this.pBx_main.Paint += new System.Windows.Forms.PaintEventHandler(this.pBx_main_Paint);
@@ -57,6 +57,7 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pBx_main);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pBx_main)).EndInit();
             this.ResumeLayout(false);
