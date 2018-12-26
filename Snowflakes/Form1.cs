@@ -13,11 +13,7 @@ namespace Snowflakes
 {
     public partial class Form1 : Form
     {
-        Boid[] flock;
-
-        float alignValue = (float)0.5;
-        float cohesionValue = 1;
-        float seperationValue = 1;
+        Flake[] flock;
 
         public Form1()
         {
@@ -28,16 +24,16 @@ namespace Snowflakes
             this.WindowState = FormWindowState.Maximized;
 
             int n = 10000;
-            flock = new Boid[n];
+            flock = new Flake[n];
             for (int i = 0; i < n; i++)
             {
-                flock[i] = new Boid(pBx_main.Width, pBx_main.Height, alignValue, cohesionValue, seperationValue);
+                flock[i] = new Flake(pBx_main.Width, pBx_main.Height);
             }
         }
 
         private void pBx_main_Paint(object sender, PaintEventArgs e)
         {
-            foreach(Boid boid in flock)
+            foreach(Flake boid in flock)
             {
                 boid.edges();
                 boid.Update();
